@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    position:fixed ;
+    z-index: 1000;
+}
+label.logo{
+    color: rgb(5, 107, 175);
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 100px;
+}
+nav ul{
+    float: right;
+    margin-right: 300px;
+    overflow: hidden;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+    overflow: hidden;
+}
+nav ul li a{
+    background: linear-gradient(45deg,#87adfe, #ff77cd);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 10px 22px rgb(94, 28,68,0.15);
+}
+nav ul li a:hover{
+    color: #fff;
+    background: linear-gradient(45deg, #ff77cd,#87adfe);
+}
+
+.checkbtn{
+    font-size: 35px;
+    color: rgb(252, 250, 250);
+    float: right;
+    line-height: 80px;
+    margin-right: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width:858px) {
+    label.logo{
+        padding: 0 100px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(45deg,#87adfe, #ff77cd);
+        top: 80px;
+        left: -900px;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 80px;
+        font-size: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+
+}
