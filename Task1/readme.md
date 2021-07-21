@@ -1,2 +1,2 @@
 TASK-1 <br>
-One Page Website
+Single Page Website
